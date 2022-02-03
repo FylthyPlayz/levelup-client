@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import { getEvents } from "./EventManager.js"
 
 export const EventList = (props) => {
