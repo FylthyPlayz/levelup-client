@@ -89,14 +89,13 @@ export const GameForm = () => {
                 </div>
             </fieldset>
 
-
-
             <button type="submit"
                 onClick={evt => {
                     // Prevent form from being submitted
                     evt.preventDefault()
 
                     const game = {
+                        id: currentGame.id,
                         maker: currentGame.maker,
                         title: currentGame.title,
                         number_of_players: parseInt(currentGame.number_of_players),
